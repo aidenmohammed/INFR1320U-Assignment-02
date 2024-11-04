@@ -16,25 +16,19 @@ router.get('/home', function(req, res, next) {
 
 router.get('/about', function(req, res, next) {
   res.render('index', { 
-    title: 'About',
+    title: 'About me',
   });
 });
 
-router.get('/products', function(req, res, next) {
+router.get('/projects', function(req, res, next) {
   res.render('index', { 
-    title: 'Products',
-  });
-});
-
-router.get('/services', function(req, res, next) {
-  res.render('index', { 
-    title: 'Service',
+    title: 'Projects',
   });
 });
 
 router.get('/contact', function(req, res, next) {
   res.render('index', { 
-    title: 'Contact us',
+    title: 'Contact me',
   });
 });
 module.exports = router;

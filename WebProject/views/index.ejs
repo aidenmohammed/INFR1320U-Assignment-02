@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <link rel = 'stylesheet' href='/Content/app.css' />
-  <link rel = "stylesheet" href = "/bootstrap/dist/css/bootstrap.min.css"/>
-</head>
-<body>
-  <h1>Welcome to the <%= title %> page</h1>
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
 
-  <script src = "/Scripts/app.js"></script>
-  <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src = "/bootstrap/dist/jquery.min.js"></script>
 
+<main>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Welcome to the <%= title %> page</h1>
+  </div>
+</div>
+</main>
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
 </body>
 </html>
